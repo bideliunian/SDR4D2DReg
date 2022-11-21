@@ -25,7 +25,7 @@ m <- c(50, 100)
 Models <- c('md2md_ex1','md2md_ex2','md2md_ex3','md2md_ex4','md2md_ex5')
 complex.x <- 1
 complex.y <- 1
-order.method <- 'bic'
+order.method <- 'true'
 
 
 ############## PART 2: implement the wgsir on d2v models #############
