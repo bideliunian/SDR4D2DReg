@@ -84,14 +84,14 @@ plot_death <- function(l){
   p_death <<- p_death + geom_line(data=df, aes(x,y),alpha=0.1)
 }
 lapply(death_density, plot_death)
-p_death+labs(title="",x="Age(0-100)", y = "Density of age at death")
+p_death+labs(title="",x="Age(0-100)", y = "Density of age at death") + theme_bw()
 p_birth <- ggplot()
 plot_birth <- function(l){
   df <- data.frame(x=l$x,y=l$y)
   p_birth <<- p_birth + geom_line(data=df, aes(x,y),alpha=0.1)
 }
 lapply(birth_density, plot_birth)
-p_birth+labs(title="",x="Age(15-49)", y = "Density of mother's age at birth")
+p_birth+labs(title="",x="Age(15-49)", y = "Density of mother's age at birth") + theme_bw()
 
 
 
